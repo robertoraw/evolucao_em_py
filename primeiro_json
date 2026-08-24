@@ -1,0 +1,15 @@
+#Foi importado a biblioteca json
+import json
+#o dicionario py que sera add
+carro = {
+    "Marca": "Ford",
+    "Modelo": "Fiesta",
+    "Ano": 1999,
+    "Preço": 20000
+}
+#transformando o dicionario py em json
+dados_json = json.dumps(carro)
+#recuperando os dados json usando loads
+retorno_json = json.loads(dados_json)
+#mostrando dados retornados
+print(retorno_json)
