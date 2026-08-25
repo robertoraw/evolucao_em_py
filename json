@@ -1,0 +1,11 @@
+#1ª vez usando json e criando a primeira persistência com json.
+import json
+carro = {
+    "Marca": "Ford",
+    "Modelo": "Fiesta",
+    "Ano": 1999,
+    "Preço": 20000
+}
+with open("carro.json", "w") as arquivo:
+    json.dump(carro, arquivo)
+ 
