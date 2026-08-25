@@ -6,6 +6,7 @@ carro = {
     "Ano": 1999,
     "Preço": 20000
 }
+#Cria o arquivo no computador e faz a persistencia dos arquivos
 with open("carro.json", "w") as arquivo:
     json.dump(carro, arquivo)
  
